@@ -110,12 +110,13 @@
 }
 
 .second .main .image{
-    max-width: 100%;
     position: absolute;
     top: 3rem;
-    left: 55%;
-    margin-right: -14rem;
-    transition: margin .4s;
+    left: 50%;
+    height: 950px;
+    width: 50%;
+    background: url(illustration-editor-desktop.svg) no-repeat;
+    background-position: -60% 5%;
     /* border: 2px solid black; */
 }
 
@@ -140,26 +141,76 @@
 .third{
     margin-top: 7.5rem;
     font-family: 'Overpass', sans-serif;
-    height: 45vh;
-    background-color: hsl(237, 17%, 21%);
+    height: 50vh;
+    background-image: url("bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-position: -43% 85%;
+    background-repeat: no-repeat;
     color: white;
     border-radius: 0 100px 0 100px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
 }
 
-.third .image #img1{
+.third .image{
     position: absolute;
-    z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-110%,-45%);
+    transform: translate(-115%,-50%);
+    /* border: 2px solid black; */
 }
 
-.third .image #img2{
+.third .text{
+    width: 52%;
+    /* border: 2px solid black; */
+}
+
+.third .text p:first-child{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.third .text p:nth-child(2){
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 18rem 0 0;
+    margin-top: 1rem;
+}
+
+.fourth{
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8rem;
+}
+
+.fourth .image{
     position: absolute;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-96%, -65%);
+    top: -5%;
+    left: -8.3%;
+    height: 950px;
+    width: 50%;
+    background: url("illustration-laptop-desktop.svg") no-repeat;
+    background-position: 70% 0;
+    /* border: 2px solid black; */
+}
+
+.fourth .text{
+    width: 50%;
+    margin-top: 7rem;
+}
+
+.fourth .text .one > p:first-child, .fourth .text .two > p:first-child{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.fourth .text .one > p:nth-child(2), .fourth .text .two > p:nth-child(2){
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 65%;
+    line-height: 2rem;
 }
