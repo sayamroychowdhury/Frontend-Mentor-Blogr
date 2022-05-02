@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+    height: 60vh;
+    background: url("./bg-pattern-intro-desktop.svg"), linear-gradient(to right, hsl(13, 100%, 72%), hsl(356, 100%, 66%));
+    background-position: 25% 50%;
+    border-radius: 0 0 0 100px;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+.first .navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    /* border: 2px solid black; */
+}
+
+.first .navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 1rem;
+    /* border: 2px solid black; */
+}
+
+.first .navbar .logo{
+    width: 10vw;
+}
+
+.first .navbar ul:nth-child(2){
+    width: 50vw;
+}
+
+.first .navbar ul:nth-child(3){
+    width: 40vw;
+}
+
+.first .navbar ul li, .first .next .goto ul li{
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 2rem;
+}
+
+.first .navbar .item{
+    display: flex;
+}
+
+.first .navbar .item img{
+    align-self: center;
+    margin-left: 0.45rem;
+}
+
+.lastContents{
+    justify-content: end;
+}
+
+.first .next .goto ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.styl:hover{
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+}
+
+.first .next h1{
+    margin: 3rem 1rem 1rem 1rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.first .next p{
+    font-size: 1.2rem;
+}
+
+.first .next .goto ul li{
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.second{
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+}
+
+.second .main .text{
+    margin: 8rem;
+    padding: 1.5rem;
+    /* border: 2px solid black; */
+}
+
+.second .main .text .futureText{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+.second .main .image{
+    max-width: 100%;
+    position: absolute;
+    top: 3rem;
+    left: 55%;
+    margin-right: -14rem;
+    transition: margin .4s;
+    /* border: 2px solid black; */
+}
+
+.second .main .text .one, .second .main .text .two{
+    width: 50%;
+    margin-top: 3rem;
+    /* border: 2px solid black; */
+}
+
+.second .main .text .one > p:first-child, .second .main .text .two > p:first-child{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.second .main .text .one > p:nth-child(2), .second .main .text .two > p:nth-child(2){
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 80%;
+    line-height: 2rem;
+}
+
+.third{
+    margin-top: 7.5rem;
+    font-family: 'Overpass', sans-serif;
+    height: 45vh;
+    background-color: hsl(237, 17%, 21%);
+    color: white;
+    border-radius: 0 100px 0 100px;
+    display: flex;
+    position: relative;
+}
+
+.third .image #img1{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%,-45%);
+}
+
+.third .image #img2{
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-96%, -65%);
+}
