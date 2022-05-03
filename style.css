@@ -214,3 +214,36 @@
     width: 65%;
     line-height: 2rem;
 }
+
+.fifth-footer{
+    margin-top: 15rem;
+    height: 50vh;
+    background-color: hsl(237, 17%, 21%);
+    color: white;
+    display: flex;
+    padding: 5rem;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    border-radius: 0 100px 0 0;
+}
+
+.fifth-footer .logo{
+    width: 30vw;
+    height: fit-content;
+    padding-left: 7rem;
+    /* border: 2px solid black; */
+}
+
+.fifth-footer .one, .fifth-footer .two, .fifth-footer .three{
+    width: 20vw;
+}
+
+.fifth-footer .one > p, .fifth-footer .two > p, .fifth-footer .three > p{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.fifth-footer .one li, .fifth-footer .two li, .fifth-footer .three li{
+    list-style-type: none;
+    margin-bottom: 0.75rem;
+}
